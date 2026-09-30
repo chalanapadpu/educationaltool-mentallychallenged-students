@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
 [![Switch Access Ready](https://img.shields.io/badge/Input-Switch%20Access%20Ready-orange)](#switch-access--motor-accommodations)
 [![Sensory Friendly](https://img.shields.io/badge/Sensory-Overload%20Protected-teal)](#sensory-architecture)
-
+App link: https://auraable-accessible-special-education-learning-pl.ai.studio
 **AuraAble** is an open-source, highly accessible, and sensory-friendly interactive learning platform designed for special education schools, occupational therapists, speech-language pathologists, and families. 
 
 Tailored specifically for students with **Intellectual and Developmental Disabilities (IDD)**, **Autism Spectrum Disorder (ASD)**, **Down Syndrome**, **Cerebral Palsy**, **Dyslexia**, and **Low-Vision/Fine-Motor challenges**, AuraAble eliminates sensory triggers (harsh alarms, strobe effects, countdown pressure) and replaces them with evidence-based cognitive scaffolds.
