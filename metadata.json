@@ -1,0 +1,6 @@
+{
+  "name": "AuraAble - Accessible Special Education Learning Platform",
+  "description": "A highly accessible, sensory-friendly, and interactive learning platform catering to students with physical, neurodivergent, cognitive, and sensory needs with visual schedules, gamified tasks, calm zones, and IEP tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

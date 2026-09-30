@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #f8fafc;
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --card-bg: #ffffff;
+    --card-border: #e2e8f0;
+    --accent-primary: #0284c7;
+    --accent-hover: #0369a1;
+    --focus-ring: #0284c7;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+/* Accessibility Theme Modes */
+body.theme-high-contrast-dark {
+  --bg-main: #000000;
+  --text-main: #ffffff;
+  --text-muted: #e2e8f0;
+  --card-bg: #111111;
+  --card-border: #ffffff;
+  --accent-primary: #facc15;
+  --accent-hover: #fde047;
+  --focus-ring: #facc15;
+}
+
+body.theme-high-contrast-light {
+  --bg-main: #ffffff;
+  --text-main: #000000;
+  --text-muted: #1e293b;
+  --card-bg: #ffffff;
+  --card-border: #000000;
+  --accent-primary: #000000;
+  --accent-hover: #333333;
+  --focus-ring: #000000;
+}
+
+body.theme-yellow-on-black {
+  --bg-main: #000000;
+  --text-main: #ffff00;
+  --text-muted: #fef08a;
+  --card-bg: #050505;
+  --card-border: #ffff00;
+  --accent-primary: #ffff00;
+  --accent-hover: #ffffff;
+  --focus-ring: #ffff00;
+}
+
+body.theme-dark {
+  --bg-main: #0b1120;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --card-bg: #1e293b;
+  --card-border: #334155;
+  --accent-primary: #38bdf8;
+  --accent-hover: #7dd3fc;
+  --focus-ring: #38bdf8;
+}
+
+body.theme-calm-pastel {
+  --bg-main: #f1f5f3;
+  --text-main: #1e293b;
+  --text-muted: #475569;
+  --card-bg: #ffffff;
+  --card-border: #cbd5e1;
+  --accent-primary: #0d9488;
+  --accent-hover: #0f766e;
+  --focus-ring: #0d9488;
+}
+
+/* Dyslexia-Friendly Font Overrides */
+body.font-dyslexic {
+  font-family: 'Atkinson Hyperlegible', 'Comic Sans MS', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.12em !important;
+  line-height: 1.8 !important;
+}
+
+body.font-lexend {
+  font-family: 'Lexend', system-ui, sans-serif !important;
+}
+
+/* Reduced Motion Override */
+body.reduced-motion *,
+body.reduced-motion *::before,
+body.reduced-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+/* Universal Focus Ring for Motor & Keyboard Navigation */
+:focus-visible {
+  outline: 4px solid var(--focus-ring) !important;
+  outline-offset: 3px !important;
+  border-radius: 4px;
+}
+
+/* Switch Access Scan Highlight */
+.switch-highlight {
+  box-shadow: 0 0 0 5px #f59e0b, 0 0 16px rgba(245, 158, 11, 0.6) !important;
+  outline: 4px solid #f59e0b !important;
+  transform: scale(1.02);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Printable Schedule & Flashcard Media Rules */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-card {
+    page-break-inside: avoid;
+    border: 2px solid #000000 !important;
+    margin-bottom: 1rem;
+  }
+}
